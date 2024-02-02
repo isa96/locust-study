@@ -1,0 +1,9 @@
+ curl -X POST http://127.0.0.1:8000/createuser -H "Content-Type: application/x-www-form-urlencoded" -d "fullname=Andreas&gender=Male"
+
+ curl -X POST http://127.0.0.1:8000/createuserjson -H "Content-Type: application/json" -d '{"fullname": "Andreas", "gender":"Male"}'
+
+ curl -X POST http://127.0.0.1:8000/predict -H "Content-Type: application/json" -d '{"review": "Halo blibli. Sedikit saran untuk gratis ongkirnya yg minimum 200rb peritem Di ubah jadi minum dr total belanja 200rb. Jd bisa beli produk yg sama dengn jumlah bnyak. Atau pun bisa beli produk yg berbeda dlam jumlah banyak. Sy harap bisa di terapkan Makasih"}'
+
+ curl -X POST https://simplehello.fly.dev/predict -H "Content-Type: application/json" -d '{"review": "Baru mau coba pakai ini aplikasi karena di Traveloka agak mahal, katanya disini bisa agak murah dan banyak promo, tapi kenapa semua pada komentar Negatif, waduh repot juga ini...."}'
+
+ curl -X POST https://simplehello.fly.dev/predict -H "Content-Type: application/json" -d '{"review": "membantu banget buat IRT yang punya baby ,jdi ga perlu ribet belanja keluar,bisa pake aplikasi sayurbox ini,,recomended bangettt.."}'
